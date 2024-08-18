@@ -67,6 +67,6 @@ public class TicTacToe {
 		System.out.println("\n============ Results ============");
 		System.out.println("\nExpandeds: " + mm.expanded);
 		System.out.println("\nVerifieds: " + mm.verifieds);
-		System.out.println("\nTotal IA time: " + totalTime);
+		System.out.println("\nTotal IA time: "+ totalTime + " ms");
 	}
 }

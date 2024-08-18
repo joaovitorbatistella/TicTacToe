@@ -106,7 +106,6 @@ public class MINIMAX {
 		return board;
 	}
 	
-	// Expande os próximos movimentos possíveis do jogador 2 (IA)
 	public int maxPruning(int[][] board, int alpha, int beta, boolean first) {
 		// Se encontrar um tabuleiro em que o jogo seja considerado como encerrado
 		if(terminalTest(board)) {
@@ -115,6 +114,7 @@ public class MINIMAX {
 		
 		int v = Integer.MIN_VALUE;
 		
+		// Expande os próximos movimentos possíveis do jogador 2 (IA)
 		for(Successor s: expandSuccessors(board, 1)) {
 			this.verifieds++;
 			
